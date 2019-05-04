@@ -340,20 +340,20 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				'oops'                            => __( 'Something went wrong with the plugin API.', 'tgmpa' ),
 				'notice_can_install_required'     => _n_noop(
 					/* translators: 1: plugin name(s). */
-					'This theme requires the following plugin: %1$s.',
-					'This theme requires the following plugins: %1$s.',
+					'This plugin requires the following plugin: %1$s.',
+					'This plugin requires the following plugins: %1$s.',
 					'tgmpa'
 				),
 				'notice_can_install_recommended'  => _n_noop(
 					/* translators: 1: plugin name(s). */
-					'This theme recommends the following plugin: %1$s.',
-					'This theme recommends the following plugins: %1$s.',
+					'This plugin recommends the following plugin: %1$s.',
+					'This plugin recommends the following plugins: %1$s.',
 					'tgmpa'
 				),
 				'notice_ask_to_update'            => _n_noop(
 					/* translators: 1: plugin name(s). */
-					'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
-					'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
+					'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this plugin: %1$s.',
+					'The following plugins need to be updated to their latest version to ensure maximum compatibility with this plugin: %1$s.',
 					'tgmpa'
 				),
 				'notice_ask_to_update_maybe'      => _n_noop(
@@ -604,7 +604,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'tgmpa' ),
+				esc_attr__( 'This plugin needs to be updated to be compatible with your plugin.', 'tgmpa' ),
 				esc_html__( 'Update Required', 'tgmpa' )
 			);
 
